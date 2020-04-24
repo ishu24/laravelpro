@@ -55,7 +55,7 @@ $data="<body><div class='warper container-fluid'>
 									<th>Actualprice</th>
 									<th>Discount</th>
 									<th>offerprice</th>
-									<th>categoryname</th>
+									
 									<th>Imagepath</th>
                                     <th>IsDisplay</th>
 									<th>Qty</th>
@@ -81,7 +81,7 @@ while($result=mysqli_fetch_array($rec))
 		{ 
 			$temp="no";
 		}
-		$data.="<tr class='odd gradeX'><td>".$result[1]."</td><td>".$result[2]."</td><td>".$result[3]."</td><td>".$result[4]."</td><td>".$result[5]."</td><td>".$result[6]."</td><td>".$temp."</td><td>".$result[9]."</td><td>".$result[10]."</td><td><a href='edit_product.php?Id=".$result[0]."'><i class='fa fa-pencil'></i> </a></td><td><a href='javascript:delete_id(".$result[0].")'><i class='fa fa-trash'></i> </a></td></tr>";
+		$data.="<tr class='odd gradeX'><td>".$result[1]."</td><td>".$result[2]."</td><td>".$result[3]."</td><td>".$result[4]."</td><td>".$result[6]."</td><td>".$temp."</td><td>".$result[9]."</td><td>".$result[10]."</td><td><a href='edit_product.php?Id=".$result[0]."'><i class='fa fa-pencil'></i> </a></td><td><a href='javascript:delete_id(".$result[0].")'><i class='fa fa-trash'></i> </a></td></tr>";
 	
 	
 }
